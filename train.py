@@ -29,4 +29,4 @@ model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accur
 
 model.fit(x_train, y_train, batch_size=64, epochs=10, validation_data=(x_test, y_test))
 
-model.save('cifar10_model.h5')
+model.save('my_model.h5')

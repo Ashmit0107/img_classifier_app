@@ -5,13 +5,13 @@ from PIL import Image
 
 # Function for MobileNetV2 ImageNet model
 def mobilenetv2_imagenet():
-    st.title("Image Classification with MobileNetV2")
+    st.title("Image Classification using MobileNetV2")
     
-    uploaded_file = st.file_uploader("Choose an image...", type=["jpg", "png"])
+    uploaded_file = st.file_uploader("Please choose an image...", type=["jpg", "png"])
     
     if uploaded_file is not None:
         image = Image.open(uploaded_file)
-        st.image(image, caption='Uploaded Image', use_column_width=True)
+        st.image(image, caption='Uploaded Image', use_container_width=True)
         
         st.write("Classifying...")
         
@@ -33,13 +33,13 @@ def mobilenetv2_imagenet():
 
 # Function for CIFAR-10 model
 def cifar10_classification():
-    st.title("CIFAR-10 Image Classification")
+    st.title("Image Classification using CIFAR-10")
     
     uploaded_file = st.file_uploader("Choose an image...", type=["jpg", "png"])
     
     if uploaded_file is not None:
         image = Image.open(uploaded_file)
-        st.image(image, caption='Uploaded Image', use_column_width=True)
+        st.image(image, caption='Uploaded Image', use_container_width=True)
         
         st.write("Classifying...")
         
